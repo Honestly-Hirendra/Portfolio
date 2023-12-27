@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #673BA4;
+}
+html {
+    scroll-behavior: smooth;
+  }
+nav {
+    background-color: #9C87B8;
+    display: flex;
+    height: 15px;
+    justify-content: space-around;
+    padding: 26px 0;
+    align-items: center;
+
+}
+
+nav .left {
+    font-size: 18px;
+    margin: 0 0 0 5px;
+    font-family: 'Angkor', serif;
+}
+
+nav .right {
+    display: flex;
+    font-family: 'Alfa Slab One', serif;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #040404;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #343434;
+    font-size: 105%;
+    transition: 0.3s;
+}
+
+nav ul li {
+    position: relative;
+    font-size: 15px;
+    margin-left: 35px;
+
+}
+
+main .first {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+main .left {
+    font-size: 45px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: rgb(198, 159, 249);
+    margin: 140px 0 0 0;
+}
+
+.insta {
+    margin: 50px 0 0 -16px;
+    height: 80px;
+    width: 80px;
+}
+
+.mail {
+    height: 57px;
+    width: 57px;
+    margin: -69px 0px 0px 244px;
+}
+
+.in {
+    margin: -77px 0 0 76px;
+    height: 75px;
+    width: 75px;
+}
+
+.github {
+    margin: -77px 0 0 135px;
+    height: 80px;
+    width: 74.14px;
+}
+
+.name {
+    color: rgba(81, 213, 215, 0.847);
+}
+
+#element {
+    color: rgba(81, 213, 215, 0.847);
+}
+
+.right img {
+    margin: 50px -140px;
+}
+
+.dropdown {
+    display: none;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #9C87B8;
+}
+
+nav ul li:hover .dropdown ul {
+    display: block;
+    margin: 30px 0;
+}
+
+.dropdown ul li {
+    margin: 22px 34px;
+
+}
+
+.contact {
+    display: none;
+}
+
+nav ul li:hover .contact {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #9C87B8;
+}
+
+nav ul li:hover .contact ul {
+    display: block;
+    margin: 30px 0;
+}
+
+.contact ul li {
+    margin: 22px 34px;
+}
+
+section:nth-child(even) {
+    background-color: #53535386;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.text--purple {
+    color: rgba(81, 213, 215, 0.847);
+}
+
+.section__title {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.language__img {
+    margin: 0px 0px 17px 0px;
+    width: 100%;
+    max-width: 100px;
+    transition: all 300ms;
+}
+
+.language:hover .language__img {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+
+.language__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.language__name {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.language:hover .language__name {
+    transform: scale(1);
+    opacity: 1;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px 0px;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #242424;
+}
+
+.footer__social--list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8% 0;
+}
+
+.footer__logo--img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer__social--link,
+.footer__copyright,
+.footer__logo--popper {
+    color: #fff;
+}
+
+.footer__logo--popper {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.footer__anchor {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer__anchor:hover .footer__logo--popper {
+    transform: translateX(60px);
+    opacity: 1;
+}
