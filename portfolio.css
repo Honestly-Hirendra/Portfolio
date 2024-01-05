@@ -276,3 +276,155 @@ footer {
     transform: translateX(60px);
     opacity: 1;
 }
+/*responsive*/
+/* Mobile Styles (up to 767px) */
+@media screen and (max-width: 767px) {
+  /* Navigation styles for mobile */
+  nav {
+    padding: 10px;
+  }
+
+  nav .left {
+    font-size: 16px;
+  }
+
+  nav .right {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  /* Main content styles for mobile */
+  main .first {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  main .left {
+    font-size: 24px;
+    margin: 30px 0;
+  }
+
+  .social {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social div {
+    margin: 10px;
+  }
+
+  .right img {
+    margin: 20px 0;
+    height: 60px;
+  }
+
+  /* Language section styles for mobile */
+  .language__list {
+    justify-content: center;
+  }
+
+  .language {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .language__img {
+    width: 80px;
+    max-width: 100%;
+  }
+
+  .language__name {
+    font-size: 14px;
+  }
+
+  /* Footer styles for mobile */
+  footer .footer__row {
+    padding: 5% 0;
+  }
+
+  .footer__social--list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__logo--img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer__logo--popper {
+    display: none;
+  }
+}
+
+
+/* Tablet Styles (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Navigation styles for tablet */
+  nav {
+    padding: 15px;
+  }
+
+  nav .left {
+    font-size: 24px;
+  }
+
+  nav .right {
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  /* Main content styles for tablet */
+  main .first {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+  }
+
+  main .left {
+    font-size: 36px;
+    margin: 50px 0;
+  }
+
+  .social {
+    margin-top: 30px;
+  }
+
+  /* Language section styles for tablet */
+  .language__list {
+    justify-content: space-between;
+  }
+
+  .language {
+    width: 45%;
+  }
+  
+  .language__name {
+    font-size: 16px;
+  }
+
+  /* Footer styles for tablet */
+  footer .footer__row {
+    padding: 10% 0;
+  }
+
+  .footer__social--list {
+    justify-content: space-around;
+  }
+
+  .footer__logo--img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
